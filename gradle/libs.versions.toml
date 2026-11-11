@@ -1,0 +1,13 @@
+[versions]
+kotlin = "2.4.21"
+protobuf = "4.36.2"
+protobuf-plugin = "0.10.1"
+
+[libraries]
+protobuf-java = { module = "com.google.protobuf:protobuf-java", version.ref = "protobuf" }
+protobuf-kotlin = { module = "com.google.protobuf:protobuf-kotlin", version.ref = "protobuf" }
+protobuf-protoc = { module = "com.google.protobuf:protoc", version.ref = "protobuf" }
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+protobuf = { id = "com.google.protobuf", version.ref = "protobuf-plugin" }
